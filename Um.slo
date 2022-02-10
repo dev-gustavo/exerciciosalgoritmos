@@ -1,0 +1,20 @@
+início {
+    real: valor1;
+    real: media;
+    real: soma;
+    inteiro: n;
+    
+    n = 1;  
+    soma = 0; 
+    enquanto (valor1 >= 0) {
+        leia("Insira um valor " + n , valor1);
+        se (valor1 >= 0) {
+        soma = soma + valor1;
+        n = n + 1;   
+    }
+    }
+     
+    media = soma / (n-1);
+    
+    escreva ("A media e " + media);
+}
