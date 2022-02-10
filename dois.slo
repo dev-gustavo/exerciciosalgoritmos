@@ -1,0 +1,55 @@
+
+início {
+    real: salario[5];
+    salario[0] = 1325;
+    salario[1]= 1050;
+    salario[2]= 1990;
+    salario[3]= 800;
+    salario[4]= 12450;
+    real: mediaSalario; 
+    mediaSalario = (salario[0] + salario[1] + salario[2] + salario[3] + salario[4]) / 5;
+        
+    inteiro: filhos[5];
+    filhos[0] = 2;
+    filhos[1] = 3;
+    filhos[2] = 1;
+    filhos[3] = 0;
+    filhos[4] = 6;
+    inteiro: mediaFilho;  
+    mediaFilho = (filhos[0] + filhos[1] + filhos[2] + filhos[3] + filhos[4]) / 5;
+  
+       inteiro: i; 
+       i = 0;
+       enquanto (i < 1) {
+           escreva("A media do salario da populacao é: " + mediaSalario);
+           escreva("A media de filhos é " + mediaFilho); 
+           i = i + 1;
+        }
+        
+        /////////////////////
+        
+        inteiro: a;
+        inteiro: b;
+        real: temp;
+        
+        a = 0;
+        enquanto (a < 1) {
+             b = a + 1;
+             enquanto (b < 5) {
+                 se (salario[a] > salario[b]) {
+                     temp = salario[b];
+                 salario[a] = salario[b];
+                 salario[b] = temp;
+                 }
+              b = b + 1;
+            }
+        a = a + 1;
+        escreva("O menor salario é " + salario[0]);
+        }
+        
+        //////////////
+        
+
+    
+}
+
