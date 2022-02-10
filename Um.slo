@@ -10,7 +10,8 @@ início {
         leia("Insira um valor " + n , valor1);
         se (valor1 >= 0) {
         soma = soma + valor1;
-        n = n + 1;   
+        n = n + 1;  
+       
     }
     }
      
