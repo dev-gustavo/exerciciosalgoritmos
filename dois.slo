@@ -50,15 +50,19 @@ início {
         
         //////////////
         
-        inteiro: k;
-        inteiro: count;
-        k = 0;
+        inteiro: x;
+        real: count;
+        
+        x = 0;
         count = 0;
-        para k de 0 até 5 passo 1 {
-           se (salario[k] < 1090) {
-               count += 1;
-           }
-         }
-         
+        
+        para x de 0 até 4 passo 1 {
+                                
+             se (salario[x] <= 1090) {
+               count = count + 1;
+               count = count / 5 * count;
+              } 
+          }
+         escreva("O percentual das pessoas que tem o salario até 1090 é: " + count);
 }
 
