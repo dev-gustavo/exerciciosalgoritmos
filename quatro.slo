@@ -1,0 +1,35 @@
+tipo homem {
+     inteiro: idade;
+     inteiro: altura;   
+}
+
+tipo mulher {
+     inteiro: idade;
+     inteiro: altura;   
+}
+
+início {
+    
+    homem: masc[10];
+    mulher: fem[10];
+    
+   
+    leia("Insira idade masculina", masc[0].idade);
+    leia("Insira altura masculina", masc[0].altura);
+    leia("Insira idade masculina", masc[1].idade);
+    leia("Insira altura masculina", masc[1].altura);
+    leia("Insira idade masculina", masc[2].idade);
+    leia("Insira altura masculina", masc[2].altura);
+    
+    leia("Insira idade feminina", fem[0].idade);
+    leia("Insira altura feminina", fem[0].altura);
+    leia("Insira idade feminina", fem[1].idade);
+    leia("Insira altura feminina", fem[1].altura);
+    leia("Insira idade feminina", fem[2].idade);
+    leia("Insira altura feminina", fem[2].altura);
+   
+   
+    escreva(masc);
+    escreva(fem);
+    
+}
